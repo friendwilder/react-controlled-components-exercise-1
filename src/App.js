@@ -25,11 +25,11 @@ class App extends Component {
           <input 
 			type="text" 
 			placeholder="Say Something"
-			value={this.state.query}
+			/* value={this.state.query}   No need to update the input form */ 
 			onChange={(event) => this.updateQuery(event.target.value)}
 			/>
           <p className="echo">Echo:</p>
-          <p>This should mirror the text you typed into the input field.</p>
+          <p>{this.state.query}</p>
         </div>
       </div>
     );
